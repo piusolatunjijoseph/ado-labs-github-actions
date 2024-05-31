@@ -31,6 +31,7 @@ jobs:
     # perform terraform linting 
     - name: Terraform Lint
       uses: actionshub/terraform-lint@main
+      run: terraform fmt -recursive
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
